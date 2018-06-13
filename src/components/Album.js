@@ -11,7 +11,8 @@ class Album extends Component {
 
     this.state = {album: album,
                   currentSong: album.songs[0],
-                  isPlaying: false
+                  isPlaying: false,
+                  isHovered: false
     };
 
     this.audioElement = document.createElement('audio');
@@ -44,6 +45,11 @@ class Album extends Component {
     }
   }
 
+  //handleMouseEnter() {
+  //  this.setState({imgSrc: <ion-icon name="play"></ion-icon>})
+  //  ;
+  //}
+
 
   render() {
     return (
@@ -53,6 +59,7 @@ class Album extends Component {
           <div className="album-details">
             <h1 id="album-title">{this.state.album.title}</h1>
             <h2 className="artist">{this.state.album.artist}</h2>
+            <span  className="ion-play"></span>
             <div id ="release-info">{this.state.album.releaseInfo}</div>
           </div>
         </section>
@@ -65,8 +72,21 @@ class Album extends Component {
           <tbody>
           {
             this.state.album.songs.map((song,index) =>
-              <tr className="song" key={index} onClick={()=>this.handleSongClick(song)}>
-                <td>{index + 1}</td>
+              <tr className="song" key={index}
+              onClick={()=>this.handleSongClick(song)}
+              onMouseEnter = {()=>this.setState({isHovered: index+1})}
+              onMouseLeave= {()=> this.setState({isHovered: false})}>
+                <td className="songActions">
+                  <button className="songNumber">
+                    {
+                      (this.state.currentSong === song && this.state.isPlaying) ?
+                      <span className={this.state.isPlaying ? "ion-md-pause" : "ion-md-play"}></span>
+                      :
+                      (this.state.isHovered === index + 1) ?
+                        <span className="ion-md-play"></span> : <span className="songNumber">{index + 1}</span>
+                    }
+                    </button>
+                </td>
                 <td>{song.title}</td>
                 <td>{song.duration} seconds</td>
               </tr>
@@ -81,3 +101,12 @@ class Album extends Component {
 
 
 export default Album;
+
+                    /*  ```{ (this.state.currentSong.title === song.title) ?
+                        <span className={this.state.isPlaying ? "ion-pause" : "ion-play"}></span>
+                        :
+                        (this.state.isHovered === index+1) ?
+                        <span className="ion-play"></span>
+                        :
+                        <span className="song-number">{index+1}</span>
+                      }```*/
