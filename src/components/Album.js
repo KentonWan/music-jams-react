@@ -113,6 +113,17 @@ class Album extends Component {
 
   }
 
+  formatTime(time) {
+    const minutes = parseInt(time/60);
+    const seconds = parseInt(time - (minutes*60));
+    if (isNaN(time)) {
+      return "-:--"
+    }
+    else {
+    return minutes + ":" + (seconds < 10 ? "0"+seconds : seconds);
+  }
+}
+
 
   render() {
     return (
@@ -160,6 +171,7 @@ class Album extends Component {
         <PlayerBar isPlaying={this.state.isPlaying}
                   currentSong={this.state.currentSong}
                   currentTime={this.audioElement.currentTime}
+                  formatTime={(t)=>this.formatTime(t)}
                   duration={this.audioElement.duration}
                   currentVolume={this.audioElement.currentVolume}
                   handleSongClick={()=>this.handleSongClick(this.state.currentSong)}
