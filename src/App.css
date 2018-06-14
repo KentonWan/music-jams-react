@@ -20,15 +20,12 @@
   padding: 5px;
 }
 
-li {
-  padding: 5px;
-}
-
 .navigation .leftNav {
   float: left;
   color: white;
   font-size: 1.5em;
   font-weight: bold;
+  padding: 5px;
 
 }
 
@@ -36,6 +33,20 @@ li {
   float: right;
   text-decoration: none;
   color: white;
+  padding: 5px;
+}
+
+.App .main-title {
+  font-size: 4em;
+  font-weight: bold;
+  margin: auto;
+  width: 50%;
+  padding: 25px 0;
+}
+
+.App .title {
+  background-color: #F6F1F1;
+  margin: 0;
 }
 
 .link {
@@ -58,4 +69,15 @@ li {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.App .footer {
+  background-color:#4A4646;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem;
+  
 }

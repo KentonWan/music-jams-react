@@ -16,19 +16,21 @@ class App extends Component {
               <li className="leftNav">bloc jams</li>
               <li className="rightNav"><Link className="link" to='/library'>Library</Link></li>
               <li className="rightNav"><Link className="link" to="/">Home</Link></li>
-
             </ul>
           </nav>
         </header>
         <section className="title">
-          <h1>bloc jams</h1>
+          <h1 className="main-title">bloc jams</h1>
         </section>
         <main>
           <Route exact path="/" component={ Landing } />
           <Route path="/library" component={ Library } />
           <Route path="/album/:slug" component={ Album } />
         </main>
+        <footer className="footer">
+        </footer>
       </div>
+
     );
   }
 }
