@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Avenir, "sans-serif";
 }
 
 .App-logo {
@@ -7,11 +8,43 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.App .header {
+  background-color: #4A4646;
+  height: 20px;
   padding: 20px;
   color: white;
+}
+.App .navigation {
+  list-style: none;
+  display: inline;
+  padding: 5px;
+}
+
+li {
+  padding: 5px;
+}
+
+.navigation .leftNav {
+  float: left;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+
+.navigation .rightNav {
+  float: right;
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .App-title {
