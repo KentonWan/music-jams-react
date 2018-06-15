@@ -1,0 +1,63 @@
+.album {
+  font-family: Avenir, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+#album-info {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+#album-cover-art {
+  height: 450px;
+  margin: 20px;
+  box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+#album-title {
+  font-size: 2em;
+  margin: 5px;
+  padding: 0px;
+}
+
+.artist {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 5px;
+
+}
+
+#release-info {
+  font-size: 1em;
+}
+
+.song-list-player-bar {
+  float: right;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: 75px;
+
+}
+
+#song-list {
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.song-title {
+  text-align: left;
+  padding: 5px 15px;
+}
+.song-duration {
+  padding: 5px 15px;
+}
+
+.songActions {
+  padding: 5px 15px;
+}
+
+#table-header {
+  font-size: 1em;
+}

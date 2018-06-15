@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import './Album.css';
 
 class Album extends Component {
   constructor(props){
@@ -133,16 +134,21 @@ class Album extends Component {
           <div className="album-details">
             <h1 id="album-title">{this.state.album.title}</h1>
             <h2 className="artist">{this.state.album.artist}</h2>
-            <span  className="ion-play"></span>
             <div id ="release-info">{this.state.album.releaseInfo}</div>
           </div>
         </section>
+        <section className="song-list-player-bar">
         <table id="song-list">
           <colgroup>
             <col id='song-number-column' />
             <col id='song-title-column' />
             <col id='song-duration-column' />
           </colgroup>
+          <tr>
+            <th id="table-header">Song #</th>
+            <th id="table-header">Song Title</th>
+            <th id="table-header">Duration</th>
+          </tr>
           <tbody>
           {
             this.state.album.songs.map((song,index) =>
@@ -161,8 +167,8 @@ class Album extends Component {
                     }
                     </button>
                 </td>
-                <td>{song.title}</td>
-                <td>{song.duration} seconds</td>
+                <td className="song-title">{song.title}</td>
+                <td className="song-duration">{this.formatTime(song.duration)}</td>
               </tr>
               )
           }
@@ -179,6 +185,7 @@ class Album extends Component {
                   handleNextClick={()=>this.handleNextClick()}
                   handleTimeChange={(e)=>this.handleTimeChange(e)}
                   handleVolumeChange={(e) =>this.handleVolumeChange(e)}/>
+        </section>
       </section>
     );
   }
