@@ -3,14 +3,18 @@
   font-family: Avenir, "sans-serif";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App .logo {
+/* animation: App-logo-spin infinite 20s linear; */
+  height: 100px;
+}
+
+.App .nav-logo {
+  height: 40px;
 }
 
 .App .header {
   background-color: #4A4646;
-  height: 20px;
+  height: 30px;
   padding: 20px;
   color: white;
 }
@@ -41,7 +45,7 @@
   font-weight: bold;
   margin: auto;
   width: 50%;
-  padding: 25px 0;
+  padding: 15px 0 0 0;
 }
 
 .App .title {
@@ -71,13 +75,13 @@
   to { transform: rotate(360deg); }
 }
 
-.App .footer {
+/*.App .footer {
   background-color:#4A4646;
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
   text-align: center;
-  padding: 1rem;
-  
-}
+  padding: 10px;
+
+}*/

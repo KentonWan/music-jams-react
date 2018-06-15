@@ -1,0 +1,31 @@
+.subheading {
+	background-color: #F6F1F1;
+}
+
+.hero-title {
+	font-family: Avenir, sans-serif;
+	font-size: 2em;
+	margin: 0 auto;
+	background-color: #F6F1F1;
+}
+
+.selling-points {
+	margin: 30px;
+	font-family: Avenir;
+}
+
+.point-title {
+	font-size: 1.5em;
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+
+.point-descriptions {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.landing-image {
+	width: 50%;
+	margin-bottom: 10px;
+}
