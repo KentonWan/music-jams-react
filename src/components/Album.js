@@ -165,13 +165,10 @@ class Album extends Component {
                     }
                     </button>
                 </td>
-<<<<<<< HEAD
                 <td>{song.title}</td>
                 <td>{this.formatTime(song.duration)}</td>
-=======
                 <td className="song-title">{song.title}</td>
                 <td className="song-duration">{this.formatTime(song.duration)}</td>
->>>>>>> Checkpoint-10-Styling
               </tr>
               )
           }
