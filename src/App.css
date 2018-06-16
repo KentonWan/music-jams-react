@@ -74,14 +74,3 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-/*.App .footer {
-  background-color:#4A4646;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  padding: 10px;
-
-}*/
