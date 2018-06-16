@@ -10,19 +10,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
+        <header className="header">
           <nav>
-            <Link to="/">Landing</Link>
-            <Link to='/library'>Library</Link>
+            <ul className="navigation">
+              <li className="leftNav"><img className="nav-logo" src={window.location.origin + '/assets/images/bloc_jams_logo.png'} alt="bloc jams logo" /></li>
+              <li className="rightNav"><Link className="link" to='/library'>Library</Link></li>
+              <li className="rightNav"><Link className="link" to="/">Home</Link></li>
+            </ul>
           </nav>
-          <h1>Bloc Jams</h1>
         </header>
-        <main>
+        <section className="title">
+          <h1 className="main-title"><img className="logo" src={window.location.origin + '/assets/images/bloc_jams_logo.png'} alt="bloc jams logo" /></h1>
+        </section>
+        <main className="main">
           <Route exact path="/" component={ Landing } />
           <Route path="/library" component={ Library } />
           <Route path="/album/:slug" component={ Album } />
         </main>
       </div>
+
     );
   }
 }

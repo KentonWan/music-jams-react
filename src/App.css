@@ -1,17 +1,65 @@
 .App {
   text-align: center;
+  font-family: Avenir, "sans-serif";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App .logo {
+/* animation: App-logo-spin infinite 20s linear; */
+  height: 100px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.App .nav-logo {
+  height: 40px;
+}
+
+.App .header {
+  background-color: #4A4646;
+  height: 30px;
   padding: 20px;
   color: white;
+}
+.App .navigation {
+  list-style: none;
+  display: inline;
+  padding: 5px;
+}
+
+.navigation .leftNav {
+  float: left;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px;
+
+}
+
+.navigation .rightNav {
+  float: right;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.App .main-title {
+  font-size: 4em;
+  font-weight: bold;
+  margin: auto;
+  width: 50%;
+  padding: 15px 0 0 0;
+}
+
+.App .title {
+  background-color: #F6F1F1;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .App-title {
