@@ -9,7 +9,7 @@
 }
 
 .App .nav-logo {
-  height: 40px;
+  height: 20px;
 }
 
 .App .header {
@@ -41,11 +41,14 @@
 }
 
 .App .main-title {
-  font-size: 4em;
-  font-weight: bold;
   margin: auto;
-  width: 50%;
+  width: 75%;
   padding: 15px 0 0 0;
+}
+
+.App .logo {
+
+  height: 50px;
 }
 
 .App .title {

@@ -13,14 +13,14 @@ class App extends Component {
         <header className="header">
           <nav>
             <ul className="navigation">
-              <li className="leftNav"><img className="nav-logo" src={window.location.origin + '/assets/images/bloc_jams_logo.png'} alt="bloc jams logo" /></li>
+              <li className="leftNav"><img className="nav-logo" src={window.location.origin + '/assets/images/music_jams_logo.png'} alt="music jams logo" /></li>
               <li className="rightNav"><Link className="link" to='/library'>Library</Link></li>
               <li className="rightNav"><Link className="link" to="/">Home</Link></li>
             </ul>
           </nav>
         </header>
         <section className="title">
-          <h1 className="main-title"><img className="logo" src={window.location.origin + '/assets/images/bloc_jams_logo.png'} alt="bloc jams logo" /></h1>
+          <h1 className="main-title"><img className="logo" src={window.location.origin + '/assets/images/music_jams_logo.png'} alt="music jams logo" height="20" /></h1>
         </section>
         <main className="main">
           <Route exact path="/" component={ Landing } />
